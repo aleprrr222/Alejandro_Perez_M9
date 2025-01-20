@@ -13,7 +13,7 @@ if(! isset($_SESSION['log'])){
 <?php echo $_SESSION['user_login']; ?>
     </h1>
 <h1>Info 1</h1>
-<a href=pag2.php>Anar a pàgina 2</a>
+<a href=tenda2.php>Anar a pàgina 2</a>
 <form action="logout.php" method="post">
 <input type="submit"  name="logout" value="Logout">
 </form>	

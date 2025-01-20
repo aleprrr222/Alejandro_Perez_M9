@@ -1,25 +1,14 @@
 <?php
 session_start();
 
-// Inicialitzem les variables de visita
 if (!isset($_SESSION['visites'])) {
     $_SESSION['visites'] = 0;
 }
 $_SESSION['visites']++;
 
-// Verificar si l'usuari està loguejat
 $logat = isset($_SESSION['username']) ? true : false;
 
 ?>
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tenda d'Informàtica</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
 
 <header>
     <?php if ($_SESSION['visites'] % 2 == 0): ?>
