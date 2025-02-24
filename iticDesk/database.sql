@@ -29,3 +29,5 @@ CREATE TABLE incidencies (
     
 );
 
+INSERT INTO `usuaris`(`dni`, `nom`, `cognom`, `email`, `contrasenya`, `rol`) VALUES ('41016583W','ale','perez','ale@gmail.com','ale','administrador');
+
